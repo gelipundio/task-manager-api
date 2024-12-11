@@ -1,0 +1,30 @@
+### GET /
+
+GET http://localhost:3000/ HTTP/1.1
+
+### GET /items
+
+GET http://localhost:3000/items HTTP/1.1
+
+### POST /items
+
+POST http://localhost:3000/items HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "example 1"
+}
+
+### PUT /items/:id (Updating items with ID = 1)
+
+PUT http://localhost:3000/items/93b0fe94-3a5e-4d43-a24f-be8ea5063e60 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"new title 2",
+    "completed": true
+}
+
+### DELETE /items/:id (Deleting items with ID = 1)
+
+DELETE http://localhost:3000/items/9267c9be-9a01-4029-ba43-3c455c0934a1 HTTP/1.1
